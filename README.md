@@ -5,3 +5,9 @@ Had to move the file as I had issues with git commits, so I have replaced old Re
 
 Most of the HTML and basic CSS is done, and now need to add functionality to the page.
 
+
+
+
+
+Spent about 2 hours making the buttons for my gallery work but seem to have that done and working now. Was very tricky getting images to fit the buttons, but found I could just set a background image to the buttons instead of putting an image div within the button, much better all around.
+
