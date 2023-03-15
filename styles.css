@@ -204,19 +204,21 @@ button.minicard:hover {
   transform: translateY(4px);
 }
 
-#card1img {
-    display: flex;
-    flex: 1;
-    justify-self: flex-start;
-    align-self: flex-start;
-    height: 100px;
-    width: 100px;
+button.minicard:active {
+ transform: translateY(-4px);
 }
 
-button#mini2.minicard {
+button#mini1.minicard {
     background-image: url(images.png/hobbypage1.png);
 }
 
+button#mini2.minicard {
+    background-image: url(images.png/RPS.png);
+}
+
+button#mini4.minicard {
+    background-image: url(images.png/Github.png);
+}
 /*content 2*/
 .content2 {
     height: 400px;
