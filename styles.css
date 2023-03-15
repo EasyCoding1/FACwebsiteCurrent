@@ -133,7 +133,7 @@ body {
 
 
 
-/*Cont1*/
+/*Cont1- The main section which includes the project gallery and the card effects*/
 
 .content1 {
     height: 450px;
@@ -206,6 +206,7 @@ button.minicard:hover {
 
 button.minicard:active {
  transform: translateY(-4px);
+ 
 }
 
 button#mini1.minicard {
