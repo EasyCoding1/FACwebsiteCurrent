@@ -220,45 +220,49 @@ button#mini2.minicard {
 button#mini4.minicard {
     background-image: url(images.png/Github.png);
 }
-/*content 2*/
+
+
+/* content 2 */
 .content2 {
-    height: 400px;
+    height: auto;
     width: 100%;
     display: flex;
     background-color: #e5e7eb;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
+    }
     
-}
-
-.quote {
-    height: 280px;
-    width: 1000px;
+    .quote {
     display: flex;
     flex-direction: column;
     font-style: italic;
     font-weight: lighter;
-}
-
-#quote1 {
-    font-size: 36px;
-    font-style: italic;
-    font-weight: lighter;
-    margin-bottom: 0;
-
-}
-
-h3 {
-    margin: 0;
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    font-size: 26px;
-
-}
-
-
+    padding: 25px;
+    max-width: 1200px;
+    font-size: 1.2rem;
+    }
+    
+    #quote1 {
+    margin-bottom: 1rem;
+    }
+    
+    h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    align-self: flex-end;
+    }
+    
+    .quote strong {
+    font-weight: bold;
+    font-style: normal;
+    }
+    
+    
+    
+    
 
 /*content 3*/
 
@@ -323,7 +327,9 @@ h5 {
     padding-bottom: 0px;
 }
 
-
+#bottombutton:hover {
+    background-color: #176af0;
+}
 .footer {
     height: 100px;
     display: flex;
@@ -354,24 +360,54 @@ h5 {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 5px solid #1f2937;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
-/* The Close Button */
-.close {
+  
+  .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
   }
-
+  
   .close:hover,
   .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-
+  
+  .website-image {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  .visit-website {
+    display: inline-block;
+    background-color: #3882f6;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  
+  .visit-website:hover {
+    background-color: #0044b2;
+    text-decoration: none;
+  }
+  
