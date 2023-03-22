@@ -13,3 +13,10 @@ Spent about 2 hours making the buttons for my gallery work but seem to have that
 
 
 Added modal to the buttons which pops up when clicked. Can use this section as the project gallery. Ideally clicking will bring up larger image of project than the thumbnail and inlude a better description and a link to the page of the project.
+
+
+
+Finished website and finished all the modals.
+
+
+Had to copy out all the modal content to make a sepeate page to comply with the instructions to submit a project for each, but I made the Project gallery as part of this project and was told that was okay. 
