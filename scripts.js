@@ -69,10 +69,3 @@ window.onclick = function(event) {
 
 // Find out more button scrolls to content NOT WORKING
 
-const findButton = document.getElementById(topbutton);
-const cntPlace = document.querySelector(content2);
-
-
-findButton.onclick = function() {
-  cntPlace.scrollIntoView
-};
