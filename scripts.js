@@ -64,8 +64,12 @@ window.onclick = function(event) {
 };
 
 
+const scrollDiv = document.getElementById('quote1');
+const scrollBut = document.getElementById('topbutton');
 
-
-
+function scrollToDiv() {
+  scrollDiv.scrollIntoView({behavior: 'smooth'});
+}
 // Find out more button scrolls to content NOT WORKING
 
+scrollBut.onclick = scrollToDiv;
