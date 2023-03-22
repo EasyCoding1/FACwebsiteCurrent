@@ -11,12 +11,23 @@ let btn3 = document.getElementById("mini3");
 let btn4 = document.getElementById("mini4");
 
 // Get the close buttons for each modal
-let close1 = document.getElementsByClassName("close")[0];
-let close2 = document.getElementsByClassName("close")[1];
-let close3 = document.getElementsByClassName("close")[2];
-let close4 = document.getElementsByClassName("close")[3];
+//let close1 = document.getElementsByClassName("close")[0];
+//let close2 = document.getElementsByClassName("close")[1];
+//let close3 = document.getElementsByClassName("close")[2];
+//let close4 = document.getElementsByClassName("close")[3];
 
-// Open the modals when the buttons are clicked
+
+//CLEANED UP CLOSE BUTTONS DELETE ABOVE!!!
+let modals = document.querySelectorAll('.modal');
+const closes = document.querySelectorAll('.close');
+for (let i = 0; i < closes.length; i++) {
+  closes[i].onclick = function () {
+    modals[i].style.display = "none";
+  }
+}
+
+
+// Open modal
 btn1.onclick = function() {
   modal1.style.display = "block";
 };
@@ -33,7 +44,7 @@ btn4.onclick = function() {
   modal4.style.display = "block";
 };
 
-// Close the modals when the close buttons are clicked
+/*CAN DELETE closee modals when the close buttons are clicked-tidy this up it could be 1 function
 close1.onclick = function() {
   modal1.style.display = "none";
 };
@@ -49,8 +60,10 @@ close3.onclick = function() {
 close4.onclick = function() {
   modal4.style.display = "none";
 };
+*/
 
-// Close the modals when the user clicks anywhere outside the modal
+
+// close  modals when click off
 window.onclick = function(event) {
   if (event.target == modal1) {
     modal1.style.display = "none";
@@ -63,13 +76,13 @@ window.onclick = function(event) {
   }
 };
 
-
+//scroll to div. Seems to be working
 const scrollDiv = document.getElementById('quote1');
 const scrollBut = document.getElementById('topbutton');
 
 function scrollToDiv() {
   scrollDiv.scrollIntoView({behavior: 'smooth'});
 }
-// Find out more button scrolls to content NOT WORKING
+
 
 scrollBut.onclick = scrollToDiv;
